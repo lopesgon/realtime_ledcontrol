@@ -28,15 +28,10 @@ Copy to /usr/local:
 ```
 sudo cp -R * /usr/local/
 ```
-That's it! To check Node.js is properly install and you have the right version, run the command 
-```
-node -v
-```
+That's it! To check Node.js is properly install and you have the right version, run the command ```node -v```
 
-Python 2.7 has to be installed also in order to control the LED has the script is in python.
-```
-sudo apt-get install python
-```
+Python 2.7 has to be installed also in order to control the LED has the script is in python. Run the command: ```sudo apt-get install python```
+
 Run the command ```python --version``` to check if your computer is running the 2.7 version.
 
 ### Installing
