@@ -36,29 +36,22 @@ Run the command ```python --version``` to check if your computer is running the 
 
 ### Installing
 
-First of all, Node.js has to be installed with npm package manager in order to do the next steps.
-
-Once you have copied the repository in your local machine, use the commands:
+Once the prerequisites done, you have copy the repository in your local machine and run the commands:
 
 ```
+git clone git@github.com:lopesgon/realtime_ledcontrol.git projet
+cd projet
 npm install
 ```
 
-Once npm has finished the process, go to the ./bin folder and execute:
+Once npm has finished installing the packages, go to the ```cd bin``` folder and run ```node www```.
 
-```
-node www
-```
-
-Access from any device connected to the local network via http://ipAddress:3000 and have fun. (The project also works through internet)
-
-## Deployment
-
-TODO
+You can now access from any device connected to the local network via http://ipAddress:3000 and have fun. (The project also works through internet)
 
 ## Built With
 
 * [Socket.io](https://github.com/socketio/socket.io) - Real-time engine
+* [Express](https://github.com/expressjs/express) - Framework for Node
 
 ## Versioning
 
