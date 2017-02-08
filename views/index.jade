@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  div(class="container page-header")
+    h1= _title
+    p Welcome to #{_title} control interface
+
+  div(class="container")
+    form(id="led_form" method="post" class="form-horizontal" role="form" action="/")
+      div(class="form-group row")
+        p
+          | Turn on/off a distant LED -&nbsp
+          span(id="coucou")
+          span &nbsp
+          span(id="date")
+      div(class="form-group")
+        label(class="switch")
+          input(id="checkbox" type="checkbox" name="light" checked=_state onchange="sendSocket(this)")
+          div(class="slider round")
+        input(name="light_hidden" type='hidden' value='0')
+        script(src="javascripts/led_socket.js")
+
+//
+  div(class="container")
+    canvas(id="videoCanvas" width="640" height="480")
+
+    p Please use a browser that supports the Canvas Element, like:
+      a(href="http://www.google.com/chrome") Chrome
+      a(href="http://www.mozilla.com/firefox/") Firefox
+      a(href="http://www.apple.com/safari/") Safari or Internet Explorer 10
+
+  script(type="text/javascript" src="javascripts/jsmpg.js")
+  // Setup the WebSocket connection and start the player
+  script(type="text/javascript").
+    var client = new WebSocket('#{_socket}');
+    var canvas = document.getElementById('videoCanvas');
+    var player = new jsmpeg(client, {canvas: canvas});
+
+//div(class="form-group")
+//button(type="submit" name="act_confirm" class="btn btn-default" disabled="disabled") Submit
