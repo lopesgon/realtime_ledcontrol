@@ -53,17 +53,11 @@ You can now access from any device connected to the local network via http://ipA
 * [Socket.io](https://github.com/socketio/socket.io) - Real-time engine
 * [Express](https://github.com/expressjs/express) - Framework for Node
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
-* **Frederic Lopes** - *Initial work* - [PurpleBooth](https://github.com/lopesgon)
+* **Frederic Lopes** - *Initial work*
 
 ## Acknowledgments
 
 * Hat tip to anyone who's code was used
-* Inspiration
-* etc
 
