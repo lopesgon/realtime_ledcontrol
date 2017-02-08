@@ -8,17 +8,36 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Node.js and npm package manager have to be installed.
+Node.js and npm package manager have to be installed. Just follow the steps below (they are not from me but I will look for the sources):
 
+Download Node.js source Raspberry Pi Model A, B, B+ and Compute Module:
 ```
-sudo apt-get install nodejs
+wget https://nodejs.org/dist/v4.0.0/node-v4.0.0-linux-armv6l.tar.gz
+tar -xvf node-v4.0.0-linux-armv6l.tar.gz
+cd node-v4.0.0-linux-armv6l
+```
+
+Raspberry Pi 2 Model B:
+```
+wget https://nodejs.org/dist/v4.0.0/node-v4.0.0-linux-armv7l.tar.gz
+tar -xvf node-v4.0.0-linux-armv7l.tar.gz
+cd node-v4.0.0-linux-armv7l
+```
+
+Copy to /usr/local:
+```
+sudo cp -R * /usr/local/
+```
+That's it! To check Node.js is properly install and you have the right version, run the command 
+```
+node -v
 ```
 
 Python 2.7 has to be installed also in order to control the LED has the script is in python.
-
 ```
 sudo apt-get install python
 ```
+Run the command ```python --version``` to check if your computer is running the 2.7 version.
 
 ### Installing
 
